@@ -58,7 +58,7 @@
                   moduleName = "Alamofire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/webonise/Desktop/SPMVPDemo/SPMVPDemo/Pods/Alamofire/Source/ResponseSerialization.swift"
-                  timestampString = "496919571.808821"
+                  timestampString = "496926466.787898"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "255"
@@ -73,7 +73,7 @@
                   moduleName = "Alamofire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/webonise/Desktop/SPMVPDemo/SPMVPDemo/Pods/Alamofire/Source/ResponseSerialization.swift"
-                  timestampString = "496919571.808975"
+                  timestampString = "496926466.788066"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "256"
@@ -106,7 +106,7 @@
                   moduleName = "Alamofire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/webonise/Desktop/SPMVPDemo/SPMVPDemo/Pods/Alamofire/Source/ResponseSerialization.swift"
-                  timestampString = "496919571.809696"
+                  timestampString = "496926466.788866"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "258"
@@ -121,7 +121,7 @@
                   moduleName = "Alamofire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/webonise/Desktop/SPMVPDemo/SPMVPDemo/Pods/Alamofire/Source/ResponseSerialization.swift"
-                  timestampString = "496919571.8098"
+                  timestampString = "496926466.789003"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "258"
@@ -187,53 +187,86 @@
             endingLineNumber = "56"
             landmarkName = "testNameInThreeWords()"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SPMVPDemoTests.SPMVPDemoTests.testNameInThreeWords () -&gt; ()"
-                  moduleName = "SPMVPDemoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/webonise/Desktop/SPMVPDemo/SPMVPDemo/SPMVPDemoTests/SPMVPDemoTests.swift"
-                  timestampString = "496919574.13859"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "512">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SPMVPDemoTests.SPMVPDemoTests.(testNameInThreeWords () -&gt; ()).(implicit closure #1)"
-                  moduleName = "SPMVPDemoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/webonise/Desktop/SPMVPDemo/SPMVPDemo/SPMVPDemoTests/SPMVPDemoTests.swift"
-                  timestampString = "496919574.138757"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "33">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SPMVPDemoTests.SPMVPDemoTests.(testNameInThreeWords () -&gt; ()).(implicit closure #2)"
-                  moduleName = "SPMVPDemoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/webonise/Desktop/SPMVPDemo/SPMVPDemo/SPMVPDemoTests/SPMVPDemoTests.swift"
-                  timestampString = "496919574.138972"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPMVPDemo/User Info List/Presenter/SPUserInfoPresenter.swift"
+            timestampString = "496926423.990473"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "startLoadingUserInfoFromServerInViewModel()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPMVPDemo/User Info List/Controller/ViewController.swift"
+            timestampString = "496926935.883203"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "finishLoadingUserInfoList(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPMVPDemo/User Info List/Controller/ViewController.swift"
+            timestampString = "496926935.883203"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "startLoadingUserInfoFromServer()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPMVPDemo/User Info List/Controller/ViewController.swift"
+            timestampString = "496926935.883203"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "failedLoadingUserInfoListWithMessage(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPMVPDemo/User Info List/Controller/ViewController.swift"
+            timestampString = "496926935.883203"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "stopActivityIndicator()"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

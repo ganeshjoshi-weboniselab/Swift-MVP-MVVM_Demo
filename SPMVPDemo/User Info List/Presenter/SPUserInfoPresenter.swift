@@ -10,8 +10,9 @@ import UIKit
 
 protocol SPUserInfoPresenterDelegate
 {
-   func finishLoadingUserInfoList(userInfoList: NSArray)
-   func failedLoadingUserInfoListWithMessage(message: NSString)
+    func startLoadingUserInfoFromServer()
+    func finishLoadingUserInfoList(userInfoList: NSArray)
+    func failedLoadingUserInfoListWithMessage(message: NSString)
 }
 
 class SPUserInfoPresenter: NSObject, SPUserInfoViewModelDelegate
@@ -24,6 +25,16 @@ class SPUserInfoPresenter: NSObject, SPUserInfoViewModelDelegate
         let vmodel = SPUserInfoViewModel()
         vmodel.delegate = self
         vmodel.fetchAllUsers()
+    }
+    
+    //#MARK:- ViewModel delegate methods
+    
+    func startLoadingUserInfoFromServerInViewModel()
+    {
+        if self.delegate != nil
+        {
+            self.delegate.startLoadingUserInfoFromServer()
+        }
     }
     
     func finishLoadingUserInfoListFromViewModel(userInfoList: NSArray)
@@ -43,4 +54,6 @@ class SPUserInfoPresenter: NSObject, SPUserInfoViewModelDelegate
             self.delegate.failedLoadingUserInfoListWithMessage("Failed to get user info from server")
         }
     }
+    
+    //#MARK: End
 }

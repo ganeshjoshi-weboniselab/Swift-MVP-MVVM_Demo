@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="96" y="-159"/>
         </scene>
-        <!--View Controller-->
+        <!--Messages-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SPMVPDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,18 +105,25 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Ygt-9h-ePo">
+                                <rect key="frame" x="291" y="257" width="20" height="20"/>
+                                <color key="color" red="0.23555001616477966" green="0.56277507543563843" blue="0.93553382158279419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tZD-kP-dnP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Ee6-jT-Bos"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tZD-kP-dnP" secondAttribute="bottom" constant="-64" id="G32-oU-ecL"/>
                             <constraint firstItem="tZD-kP-dnP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="d6j-de-Q7C"/>
+                            <constraint firstItem="Ygt-9h-ePo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="ePx-WG-wDe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tZD-kP-dnP" secondAttribute="trailing" constant="-20" id="mCM-Iw-bsq"/>
+                            <constraint firstItem="Ygt-9h-ePo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-1" id="uqa-7j-VlK"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" id="ha7-El-7De"/>
+                    <navigationItem key="navigationItem" title="Messages" id="ha7-El-7De"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="Ygt-9h-ePo" id="LEH-MZ-5z5"/>
                         <outlet property="tblUserInfoList" destination="tZD-kP-dnP" id="coA-3h-aRX"/>
                     </connections>
                 </viewController>

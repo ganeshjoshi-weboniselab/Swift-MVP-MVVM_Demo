@@ -14,7 +14,20 @@ class ViewController: UIViewController, SPUserInfoPresenterDelegate
     
     var arrayInvoicesModel : NSMutableArray = []
     
-    @IBOutlet weak var tblUserInfoList: UITableView!
+    @IBOutlet weak var tblUserInfoList : UITableView!
+    
+    @IBOutlet weak var activityIndicator : UIActivityIndicatorView!
+    
+    //#MARK:- ViewControllr delegate life cycle
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        self.setPresenter()
+    }
+    
+    //#MARK: End
     
     //#MARK:- Local functions
     
@@ -35,30 +48,50 @@ class ViewController: UIViewController, SPUserInfoPresenterDelegate
         })
     }
     
-    //#MARK: End
-    
-    //#MARK:- ViewControllr delegate life cycle
-    
-    override func viewDidLoad()
+    func startActivityIndicator()
     {
-        super.viewDidLoad()
-        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.view.userInteractionEnabled = false;
+            self.activityIndicator.startAnimating()
+        })
+    }
+    
+    func stopActivityIndicator()
+    {
+        dispatch_async(dispatch_get_main_queue(), {
+            self.view.userInteractionEnabled = true;
+            self.activityIndicator.stopAnimating()
+        })
+    }
+    
+    func setPresenter()
+    {
         let presenter = SPUserInfoPresenter()
+        
         presenter.delegate = self;
         presenter.getUserInfoListFromServer()
     }
     
     //#MARK: End
     
-    //#MARK:-
+    //#MARK:- Presenter delegate methods
+    
+    func startLoadingUserInfoFromServer()
+    {
+        self.startActivityIndicator()
+    }
     
     func finishLoadingUserInfoList(userInfoList: NSArray)
     {
+        self.stopActivityIndicator()
+        
         self.configureView(userInfoList)
     }
     
     func failedLoadingUserInfoListWithMessage(message: NSString)
     {
+        self.stopActivityIndicator()
+        
         self.alert(message as String, title: "")
     }
     

@@ -10,6 +10,7 @@ import UIKit
 
 @objc protocol SPUserInfoViewModelDelegate
 {
+    func startLoadingUserInfoFromServerInViewModel()
     func finishLoadingUserInfoListFromViewModel(userInfoList: NSArray)
     func failedLoadingUserInfoListWithMessageFromViewModel(message: NSString)
 }
@@ -37,6 +38,11 @@ class SPUserInfoViewModel: NSObject
         urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
         
         let urlSession = NSURLSession.sharedSession()
+        
+        if self.delegate != nil
+        {
+            self.delegate.startLoadingUserInfoFromServerInViewModel()
+        }
         
         let task = urlSession.dataTaskWithRequest(urlRequest)
         { (data, response, error) -> Void in
