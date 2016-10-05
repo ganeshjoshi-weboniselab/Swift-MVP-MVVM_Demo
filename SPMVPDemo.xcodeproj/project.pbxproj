@@ -14,6 +14,11 @@
 		F1509A941D9BC087004B6CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1509A931D9BC087004B6CF6 /* Assets.xcassets */; };
 		F1509A971D9BC087004B6CF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1509A951D9BC087004B6CF6 /* LaunchScreen.storyboard */; };
 		F1509AA21D9BC087004B6CF6 /* SPMVPDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1509AA11D9BC087004B6CF6 /* SPMVPDemoTests.swift */; };
+		F153820C1DA3C37B00A80660 /* SPPlacesAutoCompleteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153820B1DA3C37B00A80660 /* SPPlacesAutoCompleteDelegate.swift */; };
+		F153820F1DA3D15100A80660 /* SPPlaceMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153820E1DA3D15100A80660 /* SPPlaceMapViewController.swift */; };
+		F15382111DA4C87400A80660 /* SPPlaceMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15382101DA4C87400A80660 /* SPPlaceMapPresenter.swift */; };
+		F15382141DA50F6300A80660 /* GPSLocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15382131DA50F6300A80660 /* GPSLocationHandler.swift */; };
+		F15382161DA510B200A80660 /* SPPlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15382151DA510B200A80660 /* SPPlacesPresenter.swift */; };
 		F154B5A21D9E6A6E00B56E26 /* SPMVPUserInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F154B5961D9E6A6E00B56E26 /* SPMVPUserInfoViewCell.swift */; };
 		F154B5A31D9E6A6E00B56E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F154B5971D9E6A6E00B56E26 /* ViewController.swift */; };
 		F154B5A41D9E6A6E00B56E26 /* SPUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F154B59A1D9E6A6E00B56E26 /* SPUserInfo.swift */; };
@@ -22,6 +27,7 @@
 		F154B5A81D9E6A6E00B56E26 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F154B5A11D9E6A6E00B56E26 /* Utility.swift */; };
 		F154B5AB1D9E6AB500B56E26 /* SPUserInfoTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F154B5AA1D9E6AB500B56E26 /* SPUserInfoTableViewDataSource.swift */; };
 		F155F0531D9CE92E00B8912F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F155F0521D9CE92E00B8912F /* Podfile */; };
+		F17BA0101DA258A000BA5292 /* SPPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17BA00F1DA258A000BA5292 /* SPPlacesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,11 @@
 		F1509A9D1D9BC087004B6CF6 /* SPMVPDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPMVPDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1509AA11D9BC087004B6CF6 /* SPMVPDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMVPDemoTests.swift; sourceTree = "<group>"; };
 		F1509AA31D9BC087004B6CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F153820B1DA3C37B00A80660 /* SPPlacesAutoCompleteDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPPlacesAutoCompleteDelegate.swift; sourceTree = "<group>"; };
+		F153820E1DA3D15100A80660 /* SPPlaceMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPPlaceMapViewController.swift; sourceTree = "<group>"; };
+		F15382101DA4C87400A80660 /* SPPlaceMapPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPPlaceMapPresenter.swift; path = ../SPPlaceMapPresenter.swift; sourceTree = "<group>"; };
+		F15382131DA50F6300A80660 /* GPSLocationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSLocationHandler.swift; sourceTree = "<group>"; };
+		F15382151DA510B200A80660 /* SPPlacesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPPlacesPresenter.swift; sourceTree = "<group>"; };
 		F154B5961D9E6A6E00B56E26 /* SPMVPUserInfoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPMVPUserInfoViewCell.swift; sourceTree = "<group>"; };
 		F154B5971D9E6A6E00B56E26 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F154B59A1D9E6A6E00B56E26 /* SPUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPUserInfo.swift; sourceTree = "<group>"; };
@@ -58,6 +69,7 @@
 		F154B5A11D9E6A6E00B56E26 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		F154B5AA1D9E6AB500B56E26 /* SPUserInfoTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPUserInfoTableViewDataSource.swift; sourceTree = "<group>"; };
 		F155F0521D9CE92E00B8912F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F17BA00F1DA258A000BA5292 /* SPPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPPlacesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +136,8 @@
 		F1509A8B1D9BC087004B6CF6 /* SPMVPDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F15382121DA50F6300A80660 /* GPS Handler */,
+				F17BA00D1DA2587500BA5292 /* Google Places */,
 				F154B5AD1D9E6AD500B56E26 /* Storyboards */,
 				F154B5AC1D9E6AC200B56E26 /* Global */,
 				F154B5941D9E6A6E00B56E26 /* User Info List */,
@@ -139,6 +153,47 @@
 				F1509AA31D9BC087004B6CF6 /* Info.plist */,
 			);
 			path = SPMVPDemoTests;
+			sourceTree = "<group>";
+		};
+		F153820A1DA3C33A00A80660 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F153820B1DA3C37B00A80660 /* SPPlacesAutoCompleteDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		F153820D1DA3D12F00A80660 /* Map Screen Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F15382181DA5139A00A80660 /* Presenter */,
+				F153820E1DA3D15100A80660 /* SPPlaceMapViewController.swift */,
+			);
+			path = "Map Screen Controller";
+			sourceTree = "<group>";
+		};
+		F15382121DA50F6300A80660 /* GPS Handler */ = {
+			isa = PBXGroup;
+			children = (
+				F15382131DA50F6300A80660 /* GPSLocationHandler.swift */,
+			);
+			path = "GPS Handler";
+			sourceTree = "<group>";
+		};
+		F15382171DA5138700A80660 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F15382151DA510B200A80660 /* SPPlacesPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		F15382181DA5139A00A80660 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F15382101DA4C87400A80660 /* SPPlaceMapPresenter.swift */,
+			);
+			name = Presenter;
 			sourceTree = "<group>";
 		};
 		F154B5941D9E6A6E00B56E26 /* User Info List */ = {
@@ -219,6 +274,26 @@
 				F1509A951D9BC087004B6CF6 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F17BA00D1DA2587500BA5292 /* Google Places */ = {
+			isa = PBXGroup;
+			children = (
+				F17BA00E1DA2587500BA5292 /* Current Place Controller */,
+				F153820A1DA3C33A00A80660 /* Delegate */,
+				F153820D1DA3D12F00A80660 /* Map Screen Controller */,
+			);
+			path = "Google Places";
+			sourceTree = "<group>";
+		};
+		F17BA00E1DA2587500BA5292 /* Current Place Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F15382171DA5138700A80660 /* Presenter */,
+				F17BA00F1DA258A000BA5292 /* SPPlacesViewController.swift */,
+			);
+			name = "Current Place Controller";
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,11 +499,17 @@
 			files = (
 				F154B5A31D9E6A6E00B56E26 /* ViewController.swift in Sources */,
 				F154B5A41D9E6A6E00B56E26 /* SPUserInfo.swift in Sources */,
+				F153820C1DA3C37B00A80660 /* SPPlacesAutoCompleteDelegate.swift in Sources */,
+				F17BA0101DA258A000BA5292 /* SPPlacesViewController.swift in Sources */,
 				F154B5AB1D9E6AB500B56E26 /* SPUserInfoTableViewDataSource.swift in Sources */,
 				F154B5A71D9E6A6E00B56E26 /* SPUserInfoViewModel.swift in Sources */,
 				F154B5A81D9E6A6E00B56E26 /* Utility.swift in Sources */,
 				F154B5A51D9E6A6E00B56E26 /* SPUserInfoPresenter.swift in Sources */,
 				F154B5A21D9E6A6E00B56E26 /* SPMVPUserInfoViewCell.swift in Sources */,
+				F15382111DA4C87400A80660 /* SPPlaceMapPresenter.swift in Sources */,
+				F153820F1DA3D15100A80660 /* SPPlaceMapViewController.swift in Sources */,
+				F15382161DA510B200A80660 /* SPPlacesPresenter.swift in Sources */,
+				F15382141DA50F6300A80660 /* GPSLocationHandler.swift in Sources */,
 				F1509A8D1D9BC087004B6CF6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController, SPUserInfoPresenterDelegate
+class ViewController: UIViewController, SPUserInfoPresenterDelegate, LocationServiceDelegate
 {
     let userInfoDataSource = SPUserInfoTableViewDataSource()
     
     var arrayInvoicesModel : NSMutableArray = []
+    
+    var location : GPSLocationHandler!
     
     @IBOutlet weak var tblUserInfoList : UITableView!
     
@@ -24,12 +27,34 @@ class ViewController: UIViewController, SPUserInfoPresenterDelegate
     {
         super.viewDidLoad()
         
+        self.startGPS()
+        
         self.setPresenter()
+        
+        self.addPlacesItemButton()
     }
     
     //#MARK: End
     
     //#MARK:- Local functions
+    
+    func startGPS()
+    {
+        location = GPSLocationHandler.sharedInstance
+        location.delegate = self
+        location.startUpdatingLocation()
+    }
+    
+    func addPlacesItemButton()
+    {
+        let places = UIBarButtonItem.init(title: "Places", style: UIBarButtonItemStyle.Plain, target: self, action:  #selector(ViewController.openPlaces))
+        self.navigationItem.rightBarButtonItem = places
+    }
+    
+    func openPlaces()
+    {
+        self.performSegueWithIdentifier("SPPlacesViewController", sender: self)
+    }
     
     func configureView(userInfoList : NSArray)
     {
@@ -105,11 +130,26 @@ class ViewController: UIViewController, SPUserInfoPresenterDelegate
     }
     
     //#MARK: End
+    
+    //#MARK:- GPSLocationHandlerDelegate
+    
+    func tracingLocation(currentLocation: CLLocation)
+    {
+        
+    }
+    
+    func tracingLocationDidFailWithError(error: NSError)
+    {
+        
+    }
+    
+    //#MARK: End
 }
 
+/*
 extension ViewController
 {
-    func alert(message: String, title: String = "")
+    func alertWithMessage(message: String, title: String = "")
     {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
         let OKAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
@@ -118,3 +158,4 @@ extension ViewController
     }
     
 }
+ */

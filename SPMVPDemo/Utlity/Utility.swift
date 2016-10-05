@@ -36,7 +36,7 @@ class Utility: NSObject
      */
     class func textInLowerCase(emailText: String) -> String?
     {
-        return emailText.lowercaseString;
+        return emailText.lowercaseString
     }
     
     /*
@@ -61,5 +61,13 @@ class Utility: NSObject
         let boundingBox = text.boundingRectWithSize(constraintRect, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName: UIFont.systemFontOfSize(fontSize)], context: nil)
         
         return boundingBox.height
+    }
+    
+    class func getButtonWithFrame(frame : CGRect, buttonTag:Int, image: UIImage)->UIButton?
+    {
+        let btn = UIButton.init(frame: frame)
+        btn.tag = buttonTag
+        btn.setBackgroundImage(image , forState: UIControlState.Normal)
+        return btn
     }
 }
